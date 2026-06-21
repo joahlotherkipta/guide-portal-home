@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>麻将胡了 · 整理与对照</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+      background-color: #f8f6f2;
+      color: #1e1c18;
+      line-height: 1.7;
+    }
+    .hero {
+      background: linear-gradient(145deg, #1b2a2c 0%, #2d3f41 100%);
+      padding: 5rem 1.5rem 4rem;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .hero::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 60px;
+      background: linear-gradient(to top, #f8f6f2, transparent);
+    }
+    .hero h1 {
+      font-size: 2.8rem;
+      font-weight: 350;
+      letter-spacing: 0.06em;
+      color: #ece7db;
+      margin-bottom: 0.6rem;
+    }
+    .hero p {
+      font-size: 1.1rem;
+      color: #b8c7c5;
+      max-width: 640px;
+      margin: 0 auto;
+    }
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 2rem 1.5rem 3rem;
+    }
+    .section-card {
+      background: #ffffff;
+      border-radius: 28px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.04);
+      padding: 2.2rem 2rem;
+      margin-bottom: 2.2rem;
+    }
+    .section-card h2 {
+      font-size: 1.6rem;
+      font-weight: 420;
+      color: #1e3b3a;
+      border-left: 5px solid #7d9b97;
+      padding-left: 1rem;
+      margin-bottom: 1.2rem;
+    }
+    .section-card p {
+      margin-bottom: 1.2rem;
+      color: #2f2c26;
+    }
+    .section-card p:last-child {
+      margin-bottom: 0;
+    }
+    .highlight-link {
+      color: #b5673a;
+      font-weight: 500;
+      text-decoration: none;
+      border-bottom: 2px solid transparent;
+      transition: border-color 0.2s, color 0.2s;
+    }
+    .highlight-link:hover {
+      border-bottom-color: #b5673a;
+      color: #8f4f2b;
+    }
+    .faq-item {
+      border-top: 1px solid #e5e0d7;
+      padding: 1.1rem 0;
+    }
+    .faq-item:first-of-type {
+      border-top: none;
+      padding-top: 0;
+    }
+    .faq-item strong {
+      display: block;
+      font-weight: 600;
+      font-size: 1.05rem;
+      margin-bottom: 0.25rem;
+      color: #1e3b3a;
+    }
+    .faq-item p {
+      margin: 0;
+      color: #49443b;
+    }
+    .page-footer {
+      background: #e8e2d6;
+      padding: 2.5rem 1.5rem;
+      text-align: center;
+      color: #3b3a36;
+      font-size: 0.95rem;
+    }
+    .page-footer a {
+      color: #2c5f5b;
+      text-decoration: none;
+      border-bottom: 1px dotted #7d9b97;
+    }
+    .page-footer a:hover {
+      color: #b5673a;
+      border-bottom-color: #b5673a;
+    }
+    @media (max-width: 640px) {
+      .hero { padding: 3.5rem 1rem 3rem; }
+      .hero h1 { font-size: 2rem; }
+      .section-card { padding: 1.5rem 1.2rem; }
+      .section-card h2 { font-size: 1.35rem; }
+    }
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <h1>麻将胡了 · 整理与对照</h1>
+    <p>从日常查询、规则对照到延伸阅读，一份帮你快速上手的参考页</p>
+  </header>
+
+  <main class="container">
+    <!-- 第一段：背景与说明 -->
+    <article class="section-card">
+      <h2>为什么要整理这些内容</h2>
+      <p>麻将的玩法与计分方式各地不同，有时只是临时查一下某个牌型是否满足胡牌条件，或者对照番数表确认得分。但网上信息分散，往往需要打开好几个页面才能拼凑出需要的部分。于是我们把这些零散的知识点按日常查询的习惯重新组织，形成一份可以直接对照、翻阅的说明。</p>
+      <p>这份页面不是规则大全，也不试图覆盖所有地方变体——它更像一个经过筛选的工作台，把最常被问到的细节、最容易混淆的判定放在一起，方便你随手翻看。如果你需要更完整的规则或实时更新，可以直接参考 <a href="https://portal-home-mahjong.com" class="highlight-link">麻将胡了</a> 上的对应条目，那里保留了更细致的分类和最新调整。</p>
+    </article>
+
+    <!-- 第二段：日常查询与对照场景 -->
+    <article class="section-card">
+      <h2>常用查询与对照场景</h2>
+      <p>很多朋友会在牌局中途拿出手机，快速确认某个组合是否算番、是否达到起胡门槛。常见的场景包括：<br>
+      • 手牌里有三组顺子加一对将，但不知道缺一门是否影响胡牌；<br>
+      • 遇到花牌补花后，需要立刻核对补花是否改变门清状态；<br>
+      • 不同地方的计分表里，番种名称一样但分值不同，需要并排比较。 </p>
+      <p>针对这些情况，我们把高频条目按「牌型对照」「番种速查」「特殊规则说明」三个板块做了归类。在 <a href="https://portal-home-mahjong.com" class="highlight-link">麻将胡了</a> 的整理页里，每一类都配有简洁的示例和备注，避免在一大段文字里翻找。如果你需要对比两套规则，也可以直接并列查看，省去来回切换的麻烦。</p>
+    </article>
+
+    <!-- 第三段：延伸阅读与 FAQ 摘要 -->
+    <article class="section-card">
+      <h2>延伸阅读 · 常见疑问摘要</h2>
+      <div class="faq-item">
+        <strong>「门前清」和「不求人」是一样的吗？</strong>
+        <p>不一样。门前清要求没有吃、碰、明杠，但允许暗杠；不求人则要求全部手牌均为自摸，且没有副露。两者在多数规则中番值不同，查询时建议分开核对。</p>
+      </div>
+      <div class="faq-item">
+        <strong>花牌（春夏秋冬）在计番时如何处理？</strong>
+        <p>花牌通常不算入胡牌牌型，但每张花牌可加计一番（或按地方规则累计）。补花后如果改变了手牌数量，需注意是否影响听牌状态。具体请查看对应规则下的「花牌与补花」章节。</p>
+      </div>
+      <div class="faq-item">
+        <strong>为什么有些番种在不同地方的名称相同，但分值差很多？</strong>
+        <p>这是因为各地麻将协会或俱乐部在制定规则时，对番种的价值认定不同。例如「清一色」在国标麻将中为 6 番，在一些地方规则中可能是 2 倍或 3 倍底分。对照时最好以同一规则体系为准，或使用并排比较功能。</p>
+      </div>
+      <p style="margin-top:1.2rem; font-size:0.95rem;">以上摘录自常见疑问合集。更多细节与扩展条目，可以在 <a href="https://portal-home-mahjong.com" class="highlight-link">麻将胡了</a> 的 FAQ 分类下找到配套说明。每一条都附有简短的案例，方便快速理解。</p>
+    </article>
+  </main>
+
+  <footer class="page-footer">
+    <p>整理自公开规则资料与社区对照表 · 仅作信息参考，不构成任何指导或承诺</p>
+    <p style="margin-top:0.6rem;">如需查阅完整内容，可前往 <a href="https://portal-home-mahjong.com">麻将胡了</a></p>
+  </footer>
+</body>
+</html>
